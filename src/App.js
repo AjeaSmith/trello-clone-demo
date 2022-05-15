@@ -25,21 +25,10 @@ const DroppableStyles = styled.div`
 	background: #d4d4d4;
 `;
 
-const Avatar = styled.img`
-	height: 30px;
-	width: 30px;
-	border: 3px solid white;
-	border-radius: 50%;
-`;
-
 const CardHeader = styled.div`
 	font-weight: 500;
 `;
 
-const Author = styled.div`
-	display: flex;
-	align-items: center;
-`;
 const CardFooter = styled.div`
 	width: 100%;
 	display: flex;
