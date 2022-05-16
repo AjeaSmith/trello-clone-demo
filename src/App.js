@@ -210,16 +210,20 @@ function App() {
 																	<CardHeader>
 																		{item.name}
 																	</CardHeader>
-																	<span>
-																		{item.occupation}
-																	</span>
-																	<CardFooter>
-																		<a
-																			href={`${item.linkToProfile}`}
-																		>
-																			{item.linkToProfile}
-																		</a>
-																	</CardFooter>
+																	{item.occupation && (
+																		<span>
+																			{item.occupation}
+																		</span>
+																	)}
+																	{item.linkToProfile && (
+																		<CardFooter>
+																			<a
+																				href={`${item.linkToProfile}`}
+																			>
+																				{item.linkToProfile}
+																			</a>
+																		</CardFooter>
+																	)}
 																</DragItem>
 															);
 														}}
